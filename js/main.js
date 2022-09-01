@@ -147,7 +147,7 @@ $(function () {
 	//レトリバーの走るアニメーション
 	$(window).on('scroll',function(){
 		var num = $(this).scrollTop();
-		var split_num = num.split('');	
+		var split_num = ("" + num).split('');	
 		var split_target = split_num[1];
 	
 		if(split_target == 0 || split_target == 1 || split_target == 2){
